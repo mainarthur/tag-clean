@@ -25,4 +25,5 @@ const { tls } = require('tag-clean')
 ```js
 console.log(tls`Something ${someFalseValue && 'OK'}`) // "Something "
 console.log(tls`Something ${someTrueValue && 'OK'}`) // "Something OK"
+console.log(tls`${null}, ${undefined}, ${false}, ${''}, ${0}`) // ", , , , "
 ```
