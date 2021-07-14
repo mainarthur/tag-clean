@@ -14,6 +14,4 @@ function tls(template, ...substitutions) {
   )
 }
 
-tls.default = tls
-
-module.exports = tls
+module.exports = { tls }
