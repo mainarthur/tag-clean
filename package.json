@@ -1,0 +1,30 @@
+{
+  "name": "tag-clean",
+  "version": "1.0.0",
+  "description": "Clears all non-true values from template string",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mainarthur/tag-clean.git"
+  },
+  "keywords": [
+    "util",
+    "tag",
+    "clean",
+    "clear",
+    "template",
+    "literals",
+    "template",
+    "literals",
+    "false",
+    "null",
+    "undefined"
+  ],
+  "author": "masterarthur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mainarthur/tag-clean/issues"
+  },
+  "homepage": "https://github.com/mainarthur/tag-clean#readme",
+  "types": "./types.d.ts"
+}
