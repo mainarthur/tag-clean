@@ -1,5 +1,7 @@
 # tag-clean
 
+Inspired by react
+
 Clears all non-true values from template string
 
 ## Usage example
@@ -18,4 +20,9 @@ in js:
 const { tls } = require('tag-clean')
 ```
 
-2. Usage
+2. Using
+
+```js
+console.log(tls`Something ${someFalseValue && 'OK'}`) // "Something "
+console.log(tls`Something ${someTrueValue && 'OK'}`) // "Something OK"
+```
