@@ -10,8 +10,18 @@
 function tls(template, ...substitutions) {
   return String.raw(
     template,
-    substitutions.map((substitution) => (substitution ? substitution : '')),
+    ...substitutions.map((substitution) =>
+      substitution || isSafeNumber(substitution) ? substitution : '',
+    ),
   )
+}
+
+/**
+ *
+ * @param {number} x
+ */
+function isSafeNumber(x) {
+  return typeof x === 'number' && !Number.isNaN(x)
 }
 
 module.exports = { tls }
