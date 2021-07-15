@@ -4,7 +4,7 @@
 
 /**
  *
- * @param {{ raw: readonly string[] | ArrayLike<string> }} template
+ * @param {TemplateStringsArray} template
  * @param  {...any} substitutions
  */
 function tls(template, ...substitutions) {
